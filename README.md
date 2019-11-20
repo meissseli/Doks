@@ -7,7 +7,7 @@ This is simple, mainly explanatory PHP library for accessing DOKS API.
 This code is not officially provided or supported by Suomen Tunnistetieto Oy. It has no warranty. Since DOKS API and it's versioning can and will change in future, this code is in suspect to outdate. Suomen Tunnistetieto Oy will provide techical support for API integrations case-by-case, so please contact them for more detailed support and information.
 
 ## What is DOKS?
-DOKS is KYC-tool provided by Suomen Tunnistetieto Oy. See [here] (https://finland.bisnode.fi/documentation/) for more information.
+DOKS is KYC-tool provided by Suomen Tunnistetieto Oy. See https://doks.fi for more information.
 
 ## Credentials
 In order to access DOKS API, you need credentials (account email and password). You must obtain these from organization that uses DOKS.
