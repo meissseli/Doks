@@ -7,7 +7,7 @@ class Doks {
     protected $jwt;
 
     const HOST = "https://data.doks.fi/api";
-    const VERSION = "v1.1";
+    const VERSION = "v1.2";
 
     public function __construct($email, $password) {
         $this->email = $email;
