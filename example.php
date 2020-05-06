@@ -74,14 +74,14 @@ foreach($letters as $letter) {
     print "Letter: ".$letter["email"]."\n";
 }
 
-if($alerts = $d->getAlerts($id)) {
-    if($alerts === false) {
-        die("Unable to get alerts for " . $id);
+if($warnings = $d->getWarnings($id)) {
+    if($warnings === false) {
+        die("Unable to get warnings for " . $id);
     }
 }
 
-foreach($alerts as $alert) {
-    print "Alert: ".$alert["type"]."\n";
+foreach($warnings as $warning) {
+    print "Warning: ".$warning["type"]."\n";
 }
 
 if($documents = $d->getDocuments($id)) {

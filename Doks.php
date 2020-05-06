@@ -7,7 +7,7 @@ class Doks {
     protected $jwt;
 
     const HOST = "https://data.doks.fi/api";
-    const VERSION = "v1.2";
+    const VERSION = "v1.3";
 
     public function __construct($email, $password) {
         $this->email = $email;
@@ -176,13 +176,13 @@ class Doks {
         return self::GetDataFromResponse($this->request("/user/customers/".$id."/letters"));
     }
 
-    public function getAlerts($id=null) {
+    public function getWarnings($id=null) {
 
         if(!$id) {
-            return self::GetDataFromResponse($this->request("/user/alerts"));
+            return self::GetDataFromResponse($this->request("/user/warnings"));
         }
 
-        return self::GetDataFromResponse($this->request("/user/customers/".$id."/alerts"));
+        return self::GetDataFromResponse($this->request("/user/customers/".$id."/warnings"));
     }
 
     public function getDocuments($id) {

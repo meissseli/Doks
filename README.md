@@ -109,28 +109,28 @@ if(!$data = $d->getLetters($customers_id)) {
 var_dump($data);
 ```
 
-## Get list of alerts
-You can get all alerts that covers all customers:
+## Get list of warnings
+You can get all warnings that covers all customers:
 ```php
 $d = new Doks("youremail@domain.fi", "yourpassword");
 
-if(!$data = $d->getAlerts()) {
+if(!$data = $d->getWarnings()) {
     if($data === false) {
-        die("Unable to get documents");
+        die("Unable to get warnings");
     }
 }
 
 var_dump($data);
 ```
 
-Or you can get alerts for single customer. In that case, you must know customer's id. You can get it from list of customers.
+Or you can get warnings for single customer. In that case, you must know customer's id. You can get it from list of customers.
 ```php
 $d = new Doks("youremail@domain.fi", "yourpassword");
 $customers_id = "foo";
 
-if(!$data = $d->getAlerts($customers_id)) {
+if(!$data = $d->getWarnings($customers_id)) {
     if($data === false) {
-        die("Unable to get documents");
+        die("Unable to get warnings");
     }
 }
 
